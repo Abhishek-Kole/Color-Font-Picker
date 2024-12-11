@@ -40,7 +40,7 @@ dropdownList.addEventListener('click', (event) => {
         let newHeight = (newWidth * heightRatio) / widthRatio;
         console.log(newHeight)
 
-        // If height exceeds container's height, adjust width
+        // Adjust height & width if it exceeds container's height & width
         if (newHeight > containerHeight) {
             newHeight = containerHeight;
             console.log(newHeight)
@@ -55,8 +55,6 @@ dropdownList.addEventListener('click', (event) => {
 
         // Update dropdown button text
         dropdownButton.innerHTML = `<button class="btn">Aspect Ratio: ${ratio}</button>`;
-
-        // Close the dropdown
         dropdownList.style.display = "none";
     }
 });
