@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display,=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fanwood+Text:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    margin: 0 5px;
+    background-color: rgb(203, 182, 183);
+}
+
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name h1{
+    background-color: rgb(165, 219, 83);
+    color: rgb(101, 9, 109);
+    padding: 5px;
+    border-radius: 25px;
+}
+
+.features {
+    margin: 0 0 2px 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 15px;
+    background-color: #61708d;
+}
+
+.features ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.features ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.features ul :hover {
+    cursor: pointer;
+}
+
+.btn{
+    background-color: #305eb8;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 10px rgba(1, 2, 34, 0.3);
+}
+
+.btn:hover{
+    background-color: #244d9f;
+}
+
+/* Hide the list initially */
+#list {
+    display: none;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: 10;
+}
+
+/* Styling for the list items */
+#list li {
+    color:rgb(255, 255, 255);
+    padding: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 2px;
+    background-color: #557cca;
+}
+
+#list li:hover{
+    cursor: pointer;
+    color: aqua;
+}
+
+.container {
+    display: flex;
+    gap: 2px;
+}
+
+.container .left {
+    height: 90vh;
+    width: 80%;
+    border: 1px solid black;
+    background-color: #61708d;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .left #text {
+    height: 80%;
+    width: 80%;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: white;
+    transition: all 0.3s ease;
+    padding: 10px;
+}
+
+.container .right {
+    height: 90vh;
+    width: 20%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0px 10px;
+    background-color: #61708d;
+}
+
+.container .right h2{
+    padding: 5px 0px;
+}
+
+.right .colors{
+    padding: 10px 0px;
+    display: block;
+    align-items: center;
+}
+
+.right .colors .custom{
+    padding: 5px;
+}
+
+.right .colors .color-buttons,.right .fonts .font-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    padding: 5px;
+}
+
+.right .colors .text button{
+    border-radius: 50%;
+}
+
+.right .colors .color-buttons button{
+    height: 25px;
+    width: 25px;
+}
+
+.right .fonts .font-buttons button{
+    font-size: medium;
+    height: 35px;
+    width: 47px;
+    border-radius: 10px;
+}
+
+.right .colors label {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+
+/* color chooser */
+input[type="color"] {
+    border: none;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}

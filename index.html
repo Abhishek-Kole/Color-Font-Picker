@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color & Font Picker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="name">
+        <img src="leftDesign.png" width="140px" height="55px" alt="design">
+        <h1>Color & Font Picker</h1>
+        <img src="rightDesign.png" width="140px" height="55px" alt="design">
+    </div>
+
+    <div class="features">
+        <ul>
+            <li>
+                <button class="btn" id="resetButton">Reset</button>
+            </li>
+            <li id="pg">
+                <button class="btn">Page Size</button>
+            </li>
+            <ul id="list">
+                <li data-ratio="16:9">16:9</li>
+                <li data-ratio="4:3">4:3</li>
+                <li data-ratio="1:1">1:1</li>
+                <li data-ratio="21:9">21:9</li>
+                <li data-ratio="3:2">3:2</li>
+            </ul>
+            <li>
+                <button class="btn" id="downloadImageButton">Download</button>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="left" id="rst">
+            <h1 contenteditable="true" id="text"></h1>
+        </div>
+
+        <div class="right">
+            <div class="colors">
+                <h2>Text Color</h2>
+                <div class="color-buttons text" data-style="color"></div>
+                <div class="custom">
+                    <label>Custom: <input type="color" id="colorPicker"></label>
+                </div>
+            </div>
+            <hr>
+            <div class="colors">
+                <h2>Background Color</h2>
+                <div class="color-buttons" data-style="backgroundColor"></div>
+                <div class="custom">
+                    <label>Custom: <input type="color" id="colorPicker2"></label>
+                </div>
+            </div>
+            <hr>
+            <div class="fonts border">
+                <h2>Fonts</h2>
+                <div class="font-buttons" data-style="fontFamily"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</body>
+
+</html>
